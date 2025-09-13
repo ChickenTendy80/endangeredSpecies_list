@@ -1,8 +1,21 @@
 *{
     box-sizing: border-box;
     margin: 0px;
+    border: 1px solid black;
 }
 
 body{
     display: grid;
+    grid-template-rows: 1fr 8fr;
+    min-height: 100vh;
+}
+
+header{
+    grid-column-start: 0;
+}
+
+#form-container{
+    grid-column-start: 1;
+    background-color: mintcream;
+    place-self: center;
 }
